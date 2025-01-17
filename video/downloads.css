@@ -1,0 +1,30 @@
+body {
+     background-image: url(5c4c7927001997.55f348e9a94ea.gif);
+     background-size: cover;
+     background-repeat: none;
+     overflow: hidden;
+}
+
+.download-button {
+     display: inline-block;
+     padding: 15px 30px;
+     font-size: 18px;
+     font-weight: bold;
+     color: #fff;
+     background: linear-gradient(45deg, #4CAF50, #81C784);
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: transform 0.3s, box-shadow 0.3s;
+     text-align: center;
+     margin: 10px;
+     text-decoration: none;
+}
+.download-button:hover {
+     transform: scale(1.05);
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.download-button:active {
+     transform: scale(0.95);
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
