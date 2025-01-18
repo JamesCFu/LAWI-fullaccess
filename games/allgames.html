@@ -75,14 +75,16 @@
     }
     </style>
     <script>
-        const games = ['Game request', 'Leaderboards', 'Shell shockers', 'Smash karts', 'Skibidi games', 'PolyTrack', 'Level Devil', 'Tap goal', 'Cartoon racing', 'World guesser', 'Sky rider', 'Snow rider', 'LOLbeans', 'Fury wars', 'Ragdoll archers', 'Time shooter', 'Angry birds', 'Moon city stunt', 'Slope', 'Slope 2', 'Slope 3', 'Hoop Royale', 'Cookie click 2', 'PaperIO', 'PaperIO 2', 'Walker vs skibidi', 'Subway surfers', 
-                'Eaglercraft', 'Precision client', 'Coreball',  'Helix jump', 'Fall beans', 'Obby Robby', 'CS go', 'Red ball', 'Fox simulator', 
-                'Antimatter dimensions', 'Idle dice', 'Hole IO', 'Tallman run', 'Planet Clicker', 'Super hot', 'Aqua slide', 
-                'Stick merge', 'Happy glass', 'Vex', 'Forge of empires', 'Raft life', 
-                'Push the box', 'Stickman hook', 'Down the hill', 'Tag', 'Doodle jump',
-                'Football masters', 'Basketball legends', 'Idle mining empire',
-                'Fruit ninja', 'Monkey mart', 'Run 3', 'Tunnel rush',
-                'Tunnel rush 2', 'Mr bullet', 'Temple run', 'Solitaire', 'Glitch dash', 'OvO', 
+        const games = ['Game request', 'Leaderboards', 'Shell shockers', 'Foggy fox', 'Smash karts', 'Skibidi games', 'Warrior survival', 'PolyTrack', 'Level Devil', 'Swingo', 
+                'Freehead skate', 'Tap goal', 'Cartoon racing', 'Ballistic', 'World guesser', 'Death car IO', 'Sky rider', 'Snow rider', 'LOLbeans', 'Fury wars', 'Ragdoll archers', 'Time shooter', 'Dead again', 'Ball sort', 'Angry birds', 
+                'Moon city stunt', 'Gladihoppers', 'Arcane archer', 'Slope', 'Slope 2', 'Slope 3', 'Blumgi rocket', 'Hoop Royale', 'Cookie click 2', 'Truck simulator', 'PaperIO', 'PaperIO 2', 'Drift dudes', 'Walker vs skibidi', 'Subway surfers', 
+                'Eaglercraft', 'Precision client', 'Coreball',  'Color match', 'Super Heroes IO', 'Helix jump', 'Fall beans', 'Tornado IO', 'Obby Robby', 'WormIO', 'CS go', 'Red ball', 'Fox simulator', 
+                'Antimatter dimensions', 'Idle dice', 'Hole IO', 'Tallman run', 'Planet Clicker', 'Super hot', 'Aqua slide', 'Dots IO', 
+                'Stick merge', 'Happy glass', 'PolyArt 3d', 'Vex', 'Forge of empires', 'Cubes 2048', 'Raft life', 'Draw racing', 'Knives crash',
+                'Push the box', 'Stickman hook', 'Soccer random', 'CircleO', 'CircleO2', 'Down the hill', 'Tag', 'Doodle jump',
+                'Football masters', 'Basketball legends', 'Idle mining empire', 'Windows 11', 
+                'Fruit ninja', 'Monkey mart', 'Run 3', 'Tunnel rush', 
+                'Tunnel rush 2', 'Mr bullet', 'Bumper ball', 'Temple run', 'Solitaire', 'Glitch dash', 'OvO', 
                 'OvO 2', 'Crossy road','Grindcraft', 'Clicker heroes', 'Bitlife', 
                 'Tap tap shots', 'Case simulator', 'Iron Snout', 
                 'Drift Boss', 'KingKongCartRacing', 'Orange Clicker', 'Burrito Bison', 
@@ -90,7 +92,7 @@
                 'Ball blaster', 'Block blast', '1v1.LOL', 'Retro bowl', 
                 'Blockpost', 'Spacebar clicker', 'Idle breakout', 'Idle Restaurants',
                  'Space company', 'Candy box 2', 'Moto X3M', 'Duck life', 'Bitcoin clicker', 
-                 'Drive mad', 'SnakeIO', 'Bad ice cream', 'Funny shooter', 'Among us', 
+                 'Drive mad', 'Bad ice cream', 'Funny shooter', 'Among us', 
                  'Getting over it', 'Wordle', 'Tetris', 'Riddle school'];
     
         function filterGames() {
@@ -109,12 +111,12 @@
         function generateGameLinks() {
     const container = document.querySelector('.container');
     games.forEach(game => {
-        const link = document.createElement('div'); // Use a div instead of an anchor tag
+        const link = document.createElement('div');
         const gameFile = game.toLowerCase().replace(/\s+/g, '') + '.html';
         link.className = 'game-link';
         link.textContent = game;
         link.addEventListener('click', () => {
-            window.location.href = gameFile; // Handle navigation via JavaScript
+            window.location.href = gameFile;
         });
         container.appendChild(link);
     });
@@ -125,7 +127,7 @@
 
         function openAboutBlank() {
             const win = window.open('about:blank', '_blank');
-            const url = "https://secret.bwuce.com";
+            const url = "https://example.com/";
             const iframe = win.document.createElement('iframe');
             iframe.style.width = "100%";
             iframe.style.height = "100%";
