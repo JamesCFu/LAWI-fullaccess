@@ -4,7 +4,7 @@
     <link rel="icon" href="download.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawi - Thorns and Balloons</title>
+    <title>Lawi - Madalin stunt cars 3</title>
     <style>    
         html, body {
             margin: 0;
@@ -26,7 +26,7 @@
             left: 10px;
             width: 40px;
             height: 40px;
-            background-color: #ADD8E6; 
+            background-color: #124206; 
             border: none;
             border-radius: 50%;
             cursor: pointer;
@@ -36,13 +36,19 @@
             justify-content: center;
             font-size: 16px;
             font-weight: bold;
-            color: white;
+            color: rgb(3, 75, 9);
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <a href="index.html" class="top-left-button">L</a>
-    <iframe src="https://thornyballoons.glorious-victorious.com/" frameborder="0"></iframe>
+    <button class="top-left-button" id="homeButton">L</button>
+    <iframe src="" frameborder="0"></iframe>
+
+    <script>
+        document.getElementById("homeButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
 </html>
