@@ -75,20 +75,21 @@
     }
     </style>
     <script>
-        const games = ['Game request', 'Leaderboards', 'Shell shockers', 'Shell shockers cheats', 'Masked forces', 'Aliens nest', 'C.A.T.S', 'Nightpoint IO', 'Hammer 2 reloaded', 'Rocket league', 'Sword life', 'Foggy fox', 'Smash karts', 'Bullet force', 
+        const games = ['Game request', 'Leaderboards', 'Shell shockers', 'Shell shockers cheats', 'Masked forces', 'Aliens nest', 'C.A.T.S', 'Cat gunner', 'Nightpoint IO', 'Hammer 2 reloaded', 'Rocket league', 'Sword life', 'Foggy fox', 'Smash karts', 'Bullet force', 
                 'Skibidi games', 'Warrior survival', 'PolyTrack', 'Level Devil', 'Sausage flip', 'Swingo', 'Eggy Car', 'Thorns and balloons', 'Pixel wars', 'Bear sus', 'Lethal sniper', 
-                'Freehead skate', 'Tap goal', 'Cyberpunk racing', 'Cartoon racing', 'Ballistic', 'Moto trial racing', 'World guesser', 'Death car IO', 'Burger bounty', 
+                'Freehead skate', 'Tap goal', 'Cyberpunk racing', 'Cartoon racing', 'Deepest sword', 'Ballistic', 'Moto trial racing', 'World guesser', 'Death car IO', 'Burger bounty', 
                 'Sky rider', 'Snow rider', 'LOLbeans', 'Fury wars', 'Ice fishing', 'Ice fishing 3d', 'Jungle TD', 'Mafia wars', 'Ragdoll archers', 'Time shooter', 'Dead again', 'Ball sort', 'Angry birds', 
-                'Madalin 2', 'Madalin 3', 'Moon city stunt', 'City rider', 'Cardrive sim', 'Leader strike', 'Gladihoppers', 'Sling drift', 'Gswitch 1', 'Gswitch 2', 'Arcane archer', 'Slope', 'Slope 2', 'Slope 3', 
+                'Madalin 2', 'Madalin 3', 'Moon city stunt', 'City rider', 'Cardrive sim', 'Leader strike', 'Gladihoppers', 'Sling drift', 'Gswitch 1', 'Gswitch 2', 'Arcane archer', 'Slope', 'Slope 2', 'Slope 3', 'Two ball 3d', 
                 'Crazy tunnel', 'Electron dash', 'City bus', 'Hover racer', 'Hover racer drive', 'Lumber inc', 'Gobble', 'DucklingsIO', 'Game of farmers', 
                 'Blumgi rocket', 'Blumgi castle', 'Blumgi slime', 'Blumgi ball', 'Hoop Royale', 'Bowling stars', 'Traffic rider', 'Highway traffic', 'Traffic rush', 'Curve ball 3d', 'Cookie click 2', 'Truck simulator', 'PaperIO', 'PaperIO 2', 
-                'Drift dudes', 'Walker vs skibidi', 'Subway surfers', 
+                'Drift dudes', 'Walker vs skibidi', 'Subway surfers', 'Go kart', 'Cubito mayham', 'Free the key', 'Plactions', 'Recoil', 'Stupid zombies 1', 'Stupid zombies 2', 
                 'Eaglercraft', 'Precision client', 'Coreball',  'Color match', 'Poop', 'Super Heroes IO', 'Helix jump', 'Fast balls', 'Bottle flip', 'Bottle flip 3d', 'Dead paradise', 
                 'Fall beans', 'Tornado IO', 'Obby Robby', 'WormIO', 'CS go', 'Red ball', 'Tower  of destiny', 'Maze planet', 'Golf champions', 'Sling kong', 'Rooftop snipers 1', 'Rooftop snipers 2', 
-                'Fox simulator', 'Tiger simulator', 'Car simulator', 'Moto simulator', 'Horse simulator', 'Deer simulator', 'Monster truck sim', 
+                'Fox simulator', 'Tiger simulator', 'Car simulator', 'Moto simulator', 'Horse simulator', 'Deer simulator', 'Monster truck sim', 'Panda simulator', 
                 'Antimatter dimensions', 'Idle dice', 'Hole IO', 'Brain tests', 'Tallman run', 'Dyna boy', 'Planet Clicker', 'Super hot', '4x4 drive', 'Aqua slide', 'Dots IO', 'Stacktris', 
-                'Stick merge', 'Happy glass', 'Smiling glass', 'Smiling glass 2', 'PolyArt 3d', 'Penalty kick online', 'Pixel dash', 'Vex', 'Knight adventure', 'Forge of empires', 
-                'Cubes 2048', 'Raft life', 'Draw racing', 'Knives crash', 'Bloons', 'Checkers', 'Temple of boom', 'Nugget royale', '8bit fiesta', 'Escape prison', 'Short life ', 
+                'Stick merge', 'Happy glass', 'Smiling glass', 'Smiling glass 2', 'PolyArt 3d', 'Penalty kick online', 'Pixel dash', 'Vex', 'Jumping shell', 'Knight adventure', 'Forge of empires', 
+                'Cubes 2048', 'Raft life', 'Draw racing', 'Knives crash', 'Bloons', 'Checkers', 'Mine sweeper', 'Temple of boom', 'Nugget royale', '8bit fiesta', 'Escape prison', 'Short life ', 
+                '2048', '2048 multitask', '2048 online', '2048 suika', '2048 watermelon', 
                 'Push the box', 'Stickman hook', 'Soccer random', 'Flying truck', 'Eagle rider', 'CircleO', 'CircleO2', 'Down the hill', 'Tag', 
                 'Doodle jump', 'Maze dungeon', 'Neon war', 'Room escape', 'Goal pinball', 'Sink it', 'Murder', 
                 'Football masters', 'Basketball legends', 'Startup tycoon', 'Idle gold mining', 'Idle mining empire', 'Windows 11', 
@@ -102,7 +103,7 @@
                 'Blockpost', 'Spacebar clicker', 'Idle breakout', 'Idle Restaurants',
                 'Space company', 'Candy box 2', 'Moto X3M', 'Duck life', 'Bitcoin clicker', 'Monster tracks', 
                 'Drive mad', 'Bad ice cream', 'Funny shooter', 'Among us', 
-                'Getting over it', 'Wordle', 'Tetris', 'Riddle school', 'Fortnight'];
+                'Getting over it', 'Wordle', 'Tetris', 'Riddle school', 'Fortnight', 'Tic Tac Toe'];
     
         function filterGames() {
             let input = document.getElementById('gameSearch').value.toLowerCase();
